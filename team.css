@@ -1,0 +1,209 @@
+/* team.css - Complete styling for IEEE WIE Team Page */
+
+/* Section styles */
+#team.section {
+  padding-top: 120px; /* Adjust this value based on your header height */
+  margin-top: 0;
+}
+
+/* Ensure the first team section (with "Our Team" heading) has proper spacing */
+#team.section:first-of-type {
+  padding-top: 150px;
+}
+
+/* Team section headings */
+#team .section-header h2 {
+  color: #42126c;
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 span {
+  color: #42126c;
+  font-weight: bold;
+}
+
+/* Team title styling */
+.team-title {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.team-title h2 {
+  font-size: 2rem;
+  color: #42126c;
+}
+
+/* Team grid layout */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+
+/* Team member card styling */
+.team-member {
+  flex: 0 0 calc(20% - 24px);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  max-width: 300px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-name {
+  color: #42126c;
+  margin: 15px 0 5px;
+  padding: 0 15px;
+}
+
+.member-role {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0 15px 15px;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #42126c;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: #003057;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .team-member {
+    flex: 0 0 calc(25% - 22.5px);
+  }
+  
+  .row-1 .team-member {
+    flex: 0 0 calc(20% - 24px);
+  }
+  
+  .row-2 .team-member {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+  
+  .row-3 .team-member {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 992px) {
+  .team-member {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+  
+  .row-1 .team-member {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  #team.section {
+    padding-top: 100px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .nav-toggle {
+    display: block;
+  }
+  
+  .main-nav {
+    display: none;
+  }
+  
+  .team-member {
+    flex: 0 0 calc(50% - 15px);
+  }
+  
+  .row-1 .team-member,
+  .row-2 .team-member,
+  .row-3 .team-member {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .team-member {
+    flex: 0 0 100%;
+    max-width: 320px;
+  }
+  
+  .row-1 .team-member,
+  .row-2 .team-member,
+  .row-3 .team-member {
+    flex: 0 0 100%;
+  }
+}
