@@ -467,6 +467,15 @@ footer {
   width: auto;
 }
 
+.social-icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-left: -100px; /* Move icons to the left */
+}
+
 .social-icons a {
   display: inline-flex;
   align-items: center;
@@ -594,8 +603,14 @@ footer {
   .footer-logo-social {
     flex-direction: column;
     gap: 10px;
+    align-items: center; /* Center items horizontally */
   }
-  
+
+  .social-icons {
+    justify-content: center !important; /* Center icons */
+    margin-left: 0 !important; /* Remove left margin */
+  }
+
   .footer-bottom {
     max-width: 90%;
   }
