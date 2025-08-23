@@ -11,6 +11,12 @@
   padding-top: 150px;
 }
 
+/* Reduce gap between Executive Committee and Standing Committee Leads */
+#team.section + #team.section {
+  padding-top: 20px;
+  margin-top: 0;
+}
+
 /* Team section headings */
 #team .section-header h2 {
   color: #42126c;
@@ -23,7 +29,7 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Was 40px, now reduced */
 }
 
 .section-header h2 span {
@@ -34,8 +40,8 @@
 /* Team title styling */
 .team-title {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;    /* Was 30px, now reduced */
+  margin-bottom: 20px; /* Was 30px, now reduced */
   text-align: center;
 }
 
@@ -169,7 +175,10 @@
 
 @media (max-width: 768px) {
   #team.section {
-    padding-top: 100px;
+    padding-top: 40px;
+  }
+  #team.section:first-of-type {
+    padding-top: 80px;
   }
   
   .section-header h2 {
@@ -196,6 +205,14 @@
 }
 
 @media (max-width: 576px) {
+  .member-image img {
+    height: 330px;
+    object-fit: cover;
+  }
+  .team-member {
+    max-width: 95vw;
+  }
+  
   .team-member {
     flex: 0 0 100%;
     max-width: 320px;
