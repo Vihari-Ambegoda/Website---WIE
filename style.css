@@ -43,7 +43,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #1d2731;
+  background-color: #42126c;
   color: white;
 }
 
@@ -526,7 +526,7 @@ footer {
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #42126c;
   max-width: 80%;
   margin: 0 auto;
 }
